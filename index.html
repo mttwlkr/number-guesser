@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class= "main" id="nav">
+      <h1><span>Number </span>Guesser</h1>
+    </header>
+  
+    <section class="main">
+      <form id="form">
+        
+        <input type="text" id="guess" name="guess" placeholder=" Enter your guess">
+        
+        <br>
+        
+        <input type="submit" id="submit" class="btn" value="Guess">
+        
+        <input type="reset" id="clear" class="btn" value="Clear" disabled>
+      </form>
+
+      <h2>Your last guess was</h2>
+      <p id="displayNumber"></p>
+      <h3 id="response"></h3>
+      
+      <input type="reset" id="reset" class="btn" name="Reset" disabled>
+    </section>
+
+  <script src="js/index.js"></script>
+  </body>
+</html>

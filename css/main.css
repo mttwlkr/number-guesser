@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #313132;
+  padding: 10px 0px;
+}
+
+h1 span {
+  color: #ED458B;
+  font-weight: 700;
+}
+
+h1 {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+
+.main {
+  text-align: center;
+}
+
+form {
+  padding: 30px 0px 10px 0px; 
+}
+
+#guess {
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 300;
+  height: 36px;
+  background-color: #fff;
+  line-height: 36px;
+}
+
+.btn {
+  width: 115px;
+  height: 28px;
+  border-radius: 100px;
+  margin: 27px 10px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #D0D2D3;
+  font-weight: 300;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#clear {
+
+}
+
+#reset {
+  width: 250px;
+  margin: 30px 0px 20px 0px;
+  font-size: 16px;
+  background-color: #D0D2D3;
+}
+
+.btn:hover {
+  background-color: #EB008B;
+}
+
+#clear:disabled {
+  background-color: #929497;
+  color: #fff
+}
+
+#reset:disabled {
+  background-color: #929497;
+  color: #fff
+}
+
+h2, h3 {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+h3 {
+  height: 30px;
+}
+
+p {
+  font-size: 108px;
+  color: #ED458B;
+  height: 130px;
+  line-height: 130px;
+}
+
+
+/*
+#ED458B; Number
+#E6E7E8; Guesser
+
+
+#D0D2D3; disabled state
+#929497; clicked state
+#EB008B; on :hover
