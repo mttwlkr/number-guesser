@@ -8,6 +8,12 @@ var textInput = document.getElementById('guess');
 var clearBtn = document.getElementById('clear');
 var submitBtn = document.getElementById('submit');
 
+var minInput = document.querySelector('#minInput');
+var maxInput = document.querySelector('#maxInput');
+
+var minNumber = 0;
+var maxNumber = 100;
+
 form.addEventListener('submit', addGuess);
 form.addEventListener('reset', clearGuess);
 resetBtn.addEventListener('click', resetGame);
