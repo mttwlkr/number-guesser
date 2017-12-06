@@ -10,6 +10,10 @@ var submitBtn = document.getElementById('submit');
 
 var minInput = document.querySelector('#minInput');
 var maxInput = document.querySelector('#maxInput');
+var rangeBtn = document.querySelector('#rangeSubmit');
+
+var displayMin = document.querySelector('#displayMin');
+var displayMax = document.querySelector('#displayMax');
 
 var minNumber = 0;
 var maxNumber = 100;
@@ -17,6 +21,8 @@ var maxNumber = 100;
 form.addEventListener('submit', addGuess);
 form.addEventListener('reset', clearGuess);
 resetBtn.addEventListener('click', resetGame);
+rangeBtn.addEventListener('click', setRange)
+
 
 window.onload = generateRandom();
 
@@ -28,6 +34,19 @@ submitBtn.addEventListener('click', function(e) {
   resetBtn.removeAttribute('disabled', true);
 })
   
+function setRange(e) {
+  e.preventDefault();
+  //console.log(1);
+  var userMinValue = document.querySelector('#minInput').value;
+  displayMin.innerText = userMinValue;
+  minNumber = parseInt(userMinValue);
+  var userMaxValue = document.querySelector('#maxInput').value;
+  displayMax.innerText = userMaxValue;
+  maxNumber = parseInt(userMaxValue);
+
+}
+
+
 function removeClickability() {
   document.getElementById('clear').remove('disabled');
 }
