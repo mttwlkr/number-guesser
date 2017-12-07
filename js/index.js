@@ -64,6 +64,8 @@ function setRange(e) {
     guessP.innerHTML = "<p id='guessp'>Guess a number between <span id='displayMin'>" + minNumber + "</span>   and <span id='displayMax'>" + maxNumber + "</span></p>";
     submitBtn.removeAttribute('disabled');
     textInput.removeAttribute('disabled');
+  } else if (userMinValue || userMaxValue === '') {
+    guessP.innerText = 'lol. now you are not doing anything. do more';
   }
 }
 
