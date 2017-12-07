@@ -68,7 +68,6 @@ function setRange(e) {
   } else if (userMinValue || userMaxValue === '') {
     guessP.innerText = 'lol. now you are not doing anything. do more';
   }
-
 }
 
 function rejection() {
