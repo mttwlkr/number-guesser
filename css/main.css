@@ -28,6 +28,11 @@ h1 {
   margin-top: 10px, 0px;
 }
 
+#minmaxBtn {
+  width: 450px;
+  margin: 5px;
+}
+
 .main {
   text-align: center;
 }
@@ -102,6 +107,11 @@ input:-webkit-autofill {
 }
 
 #rangeSubmit:disabled {
+  background-color: #D0D2D3;
+  color: #fff
+}
+
+#minmaxBtn:disabled {
   background-color: #D0D2D3;
   color: #fff
 }

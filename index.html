@@ -12,24 +12,29 @@
       <h1><span>Number </span>Guesser</h1>
     </header>
     <section class="main" role="main">
-      <p id="intro">Click here if you'd like to set your own range, or...</  p>
-      <form id="upperForm" aria-label="Form to set Min and Max inputs">
+      <label for="minmaxBtn" tabindex="1"><button class="btn" id="minmaxBtn">Click here if you'd like to set your own range, or...</button></label>
+      <label for="Form to set Min and Max inputs" tabindex="2"><form id="upperForm">
         <input type="number" class="inputfields" id="minInput" placeholder="Min...">
         <input type="number" class="inputfields" id="maxInput" placeholder="Max...">
+        </label>
         <br>
+        <label for="Submit your Min and Max range"> 
         <button id="rangeSubmit" class="btn" disabled>Submit</button>
+        </label>
       </form>
-      <p id="guessp">Guess a number between <span id="displayMin">1</span>   and <span id="displayMax">100</span></p>
-      <form id="form" aria-label="Form to guess the number">
+        <p id="guessp">Guess a number between <span id="displayMin">1</span>   and <span id="displayMax">100</span></p>
+      <label for="Guess a number between the min and max input. Default is zero and 100" tabindex="3">
+        <form id="form">
         <input type="number" class="inputfields" id="guess" name="guess" placeholder="Enter your guess">
+        </label>
         <br>
-        <input type="submit" id="submit" class="btn" value="Guess" disabled>
-        <input type="reset" id="clear" class="btn" value="Clear" disabled>
+        <label for="Submit your guess" tabindex="4"><input type="submit" id="submit" class="btn" value="Guess" disabled></label>
+        <label for="Clear the guess field" tabindex="7"><input type="reset" id="clear" class="btn" value="Clear" disabled></label>
       </form>
       <h2>Your last guess was</h2>
-      <p id="displayNumber"></p>
-      <h3 id="response"></h3>
-      <input type="reset" id="reset" class="btn" name="Reset" disabled>
+      <label for="Your last guess was" tabindex="5"><p id="displayNumber" aria-labeledby="Your guess is"></p></label>
+      <label for="Your guess is" tabindex="6"><h3 id="response"></h3></label>
+       <label for="Reset the game" tabindex="8"><input type="reset" id="reset" class="btn" name="Reset" disabled></label>
     </section>
     <script src="js/index.js"></script>
   </body>

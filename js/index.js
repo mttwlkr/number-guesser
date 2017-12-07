@@ -14,7 +14,7 @@ var displayMin = document.querySelector('#displayMin');
 var displayMax = document.querySelector('#displayMax');
 var minNumber = 0;
 var maxNumber = 100;
-var introP = document.querySelector('#intro');
+var minmaxBtn = document.querySelector('#minmaxBtn');
 var upperForm = document.querySelector('#upperForm');
 var guessP = document.querySelector('#guessp');
 
@@ -42,8 +42,9 @@ submitBtn.addEventListener('click', function(e) {
   resetBtn.removeAttribute('disabled', true);
 })
 
-introP.addEventListener('click', function(e) {
+minmaxBtn.addEventListener('click', function(e) {
   upperForm.style.visibility = 'visible';
+  minmaxBtn.setAttribute('disabled', true);
 })
   
 function setRange(e) {
@@ -103,6 +104,7 @@ function compareNumbers() {
     response.innerText = ('BOOM!');
     youWin();
     upperForm.style.visibility = 'hidden';
+    minmaxBtn.removeAttribute('disabled');
   } else if (lastGuess > maxNumber){
     response.innerText = ('Please Choose A Number between ' + minNumber +' and ' + maxNumber);
   } else if (lastGuess < minNumber){
