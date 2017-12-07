@@ -7,42 +7,30 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
   </head>
-
   <body>
-    <header class= "main" id="nav">
+    <header class= "main" id="nav" role="banner">
       <h1><span>Number </span>Guesser</h1>
     </header>
-  
-    <section class="main">
-      
-      <p id="intro">Click if you'd like to set your own range, or...</p>
-      <form id="upperForm">
-        <input type="text" id="minInput" placeholder="Min...">
-        <input type="text" id="maxInput" placeholder="Max...">
+    <section class="main" role="main">
+      <p id="intro">Click here if you'd like to set your own range, or...</  p>
+      <form id="upperForm" aria-label="Form to set Min and Max inputs">
+        <input type="number" class="inputfields" id="minInput" placeholder="Min...">
+        <input type="number" class="inputfields" id="maxInput" placeholder="Max...">
         <br>
-        <button id="rangeSubmit">Submit</button>
+        <button id="rangeSubmit" class="btn" disabled>Submit</button>
       </form>
-      
-      <p id="or">Guess a number between <span id="displayMin">1</span> and <span id="displayMax">100</span></p>
-
-      <form id="form">
-        
-        <input type="text" id="guess" name="guess" placeholder=" Enter your guess">
-        
+      <p id="guessp">Guess a number between <span id="displayMin">1</span>   and <span id="displayMax">100</span></p>
+      <form id="form" aria-label="Form to guess the number">
+        <input type="number" class="inputfields" id="guess" name="guess" placeholder="Enter your guess">
         <br>
-        
-        <input type="submit" id="submit" class="btn" value="Guess">
-        
+        <input type="submit" id="submit" class="btn" value="Guess" disabled>
         <input type="reset" id="clear" class="btn" value="Clear" disabled>
       </form>
-
       <h2>Your last guess was</h2>
       <p id="displayNumber"></p>
       <h3 id="response"></h3>
-      
       <input type="reset" id="reset" class="btn" name="Reset" disabled>
     </section>
-  <script type="js/jquery-1.11.0.js"></script>
-  <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
