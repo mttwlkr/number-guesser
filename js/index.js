@@ -68,6 +68,7 @@ function setRange(e) {
   } else if (userMinValue || userMaxValue === '') {
     guessP.innerText = 'lol. now you are not doing anything. do more';
   }
+
 }
 
 function rejection() {
@@ -122,6 +123,7 @@ function youWin() {
   minInput.value = '';
   maxInput.value = '';
   generateRandom();
+  guessP.innerHTML = "<p id='guessp'>Guess a number between <span id='displayMin'>" + minNumber + "</span>   and <span id='displayMax'>" + maxNumber + "</span></p>";
 }
 
 function resetGame (e) {
