@@ -124,6 +124,7 @@ function youWin() {
   maxInput.value = '';
   generateRandom();
   guessP.innerHTML = "<p id='guessp'>Guess a number between <span id='displayMin'>" + minNumber + "</span>   and <span id='displayMax'>" + maxNumber + "</span></p>";
+  clearBtn.setAttribute('disabled', true);
 }
 
 function resetGame (e) {
