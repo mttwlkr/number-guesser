@@ -91,26 +91,10 @@ input:-webkit-autofill {
   background-color: #EB008B;
 }
 
-#clear:disabled {
-  background-color: #D0D2D3;
-  color: #fff
-}
-
-#reset:disabled {
-  background-color: #D0D2D3;
-  color: #fff
-}
-
-#submit:disabled {
-  background-color: #D0D2D3;
-  color: #fff
-}
-
-#rangeSubmit:disabled {
-  background-color: #D0D2D3;
-  color: #fff
-}
-
+#clear:disabled,
+#reset:disabled,
+#submit:disabled,
+#rangeSubmit:disabled,
 #minmaxBtn:disabled {
   background-color: #D0D2D3;
   color: #fff

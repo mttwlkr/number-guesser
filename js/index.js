@@ -80,13 +80,11 @@ function rejection() {
 }
 
 function generateRandom() {
-  //console.log('random')
   randomNumber = Math.floor((Math.random() * (maxNumber - minNumber) + minNumber));
   return randomNumber;
 }
 
-function addGuess(e) {
-  // console.log(1);                                                       
+function addGuess(e) {                                                      
   e.preventDefault();                                                  
   var userGuess = document.getElementById('guess').value;                 
   displayNumber.innerText = userGuess;
