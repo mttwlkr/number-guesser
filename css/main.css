@@ -11,6 +11,7 @@ body {
 header {
   background-color: #313132;
   padding: 10px 0px;
+  margin-bottom: 15px;
 }
 
 h1 span {
@@ -23,15 +24,38 @@ h1 {
   font-weight: 300;
 }
 
+#intro {
+  margin-top: 10px, 0px;
+}
+
+#minmaxBtn {
+  width: 450px;
+  margin: 5px;
+}
+
 .main {
   text-align: center;
 }
 
-form {
-  padding: 30px 0px 10px 0px; 
+#form {
+  padding: 30px 0px 10px 0px;
 }
 
-#guess {
+#upperForm {
+  visibility: hidden;
+}
+
+#minInput {
+  margin-top: 15px;
+  width: 100px;
+}
+
+#maxInput {
+  margin-top: 15px;
+  width: 100px;
+}
+
+.inputfields {
   padding: 5px;
   font-size: 24px;
   font-weight: 300;
@@ -45,38 +69,34 @@ form {
   height: 28px;
   border-radius: 100px;
   margin: 27px 10px;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
-  background-color: #D0D2D3;
+  background-color: #929497;
   font-weight: 300;
+  line-height: 20px;
 }
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
-#clear {
-
-}
-
 #reset {
   width: 250px;
   margin: 30px 0px 20px 0px;
   font-size: 16px;
-  background-color: #D0D2D3;
+  background-color: #929497;
 }
 
 .btn:hover {
   background-color: #EB008B;
 }
 
-#clear:disabled {
-  background-color: #929497;
-  color: #fff
-}
-
-#reset:disabled {
-  background-color: #929497;
+#clear:disabled,
+#reset:disabled,
+#submit:disabled,
+#rangeSubmit:disabled,
+#minmaxBtn:disabled {
+  background-color: #D0D2D3;
   color: #fff
 }
 
@@ -89,19 +109,10 @@ h3 {
   height: 30px;
 }
 
-p {
+#displayNumber {
   font-size: 108px;
   color: #ED458B;
   height: 130px;
   line-height: 130px;
 }
 
-
-/*
-#ED458B; Number
-#E6E7E8; Guesser
-
-
-#D0D2D3; disabled state
-#929497; clicked state
-#EB008B; on :hover
